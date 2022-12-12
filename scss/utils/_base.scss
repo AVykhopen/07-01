@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    color: var(--primery-text-color);
-    font-family: "Roboto", sans-serif;
+    color: $primery-text-color;
+    font-family: $fontText;
 }
 
 ul {
@@ -68,7 +68,7 @@ img {
     letter-spacing: 0.03em;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--primery-background-color);
+    color: $primery-background-color;
 }
 
 p {
@@ -78,4 +78,18 @@ p {
 .item {
     position: relative;
     overflow: hidden;
+}
+.name {
+    color: $primery-text-color;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 4px;
+    font-style: normal;
+}
+
+.text {
+    color: $title-text-color;
+    font-size: 16px;
+    line-height: 1.87;
+    font-style: normal;
 }

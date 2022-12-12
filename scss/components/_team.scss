@@ -1,5 +1,5 @@
 .team {
-    background-color: var(--primery-background-color);
+    background-color: $primery-background-color;
 }
 
 .team__cards {
@@ -8,7 +8,7 @@
 }
 
 .team__card-color {
-    background-color: var(--secondary-text-color);
+    background-color: $secondary-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -20,7 +20,7 @@
 }
 
 .team__card-name {
-    color: var(--primery-text-color);
+    color: $primery-text-color;
     font-size: 16px;
     line-height: 1.17;
     font-weight: 500;
@@ -28,7 +28,7 @@
 }
 
 .team__card-text {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-size: 16px;
     line-height: 1.17;
 }
@@ -46,14 +46,14 @@
     justify-content: center;
     width: 44px;
     height: 44px;
-    fill: var(--card-socials-color);
-    background-color: var(--secondary-text-color);
+    fill: $card-socials-color;
+    background-color: $secondary-text-color;
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: background-color 250ms $functionCubic,
+        fill 250ms $functionCubic;
 
-.team__socials-link:hover {
-    fill: var(--primery-background-color);
-    background-color: var(--accent-color);
+    &:hover {
+    fill: $primery-background-color;
+    background-color: $accent-color;
+}
 }

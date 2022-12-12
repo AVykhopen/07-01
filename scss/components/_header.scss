@@ -8,17 +8,17 @@
 }
 
 .header__logo {
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
     letter-spacing: 0.03em;
-    font-family: Raleway, sans-serif;
+    font-family: $fontLogo;
 }
 
 .header__logo-black {
-    color: var(--primery-text-color);
+    color: $primery-text-color;
 }
 
 .nav {
@@ -38,26 +38,25 @@
 }
 
 .nav__menu .link {
-    color: var(--primery-text-color);
+    color: $primery-text-color;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.17;
     font-weight: 500;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms $functionCubic;
+    &:hover,
+    &:focus {
+    color: $accent-color;
 }
-
-.nav__menu .link:hover,
-.nav__menu .link:focus {
-    color: var(--accent-color);
 }
 
 .nav__menu .link--current {
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.17;
     font-weight: 500;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms $functionCubic;
 }
 
 .contacts__list {
@@ -67,7 +66,7 @@
 }
 
 .contacts__link {
-    color: var(--title-text-color);
+    color: $title-text-color;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.17;
@@ -75,7 +74,13 @@
     padding: 32px 0 31px;
     display: flex;
     align-items: center;
-    fill: var(--title-text-color);
+    fill: $title-text-color;
+    
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+}
 }
 
 .link::after {
@@ -94,13 +99,7 @@
 
 .link:hover:after {
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    transition: opacity 250ms $functionCubic;
 }
 
 .contact__icon {

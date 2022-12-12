@@ -1,14 +1,13 @@
 .benefits {
     padding: 94px 0;
 }
-
 .list {
     display: flex;
     gap: 30px;
 }
 
 .list .subtitle {
-    color: var(--primery-text-color);
+    color: $primery-text-color;
     font-size: 14px;
     line-height: 1.17;
     margin: 0;
@@ -18,14 +17,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-style: normal;
-}
 
-.list .subtitle:first-child {
+    &:first-child {
     margin-left: 0;
+}
 }
 
 .list .text {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -39,7 +38,7 @@
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background: var(--primery-background-color);
+    background: $primery-background-color;
     border-radius: 4px;
 }
 
