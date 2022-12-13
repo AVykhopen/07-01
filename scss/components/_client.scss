@@ -7,7 +7,8 @@
     width: 106px;
     height: 60px;
 
-    &:hover {
+    &:hover,
+    &:focus {
         fill: $accent-color;
     }
 }

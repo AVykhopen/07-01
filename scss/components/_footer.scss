@@ -94,7 +94,8 @@
     transition: background-color 250ms $functionCubic,
         fill 250ms $functionCubic;
 
-    &:hover {
+    &:hover,
+    &:focus {
     fill: $secondary-text-color;
     background-color: $accent-color;
 }
